@@ -9,6 +9,10 @@ namespace Siccity.GLTFUtility {
 	public enum CameraType { perspective, orthographic }
 	public enum InterpolationMode { ImportFromFile = -1, LINEAR = 0, STEP = 1, CUBICSPLINE = 2 }
 
+//added for rpm conflicting issue as rpm is using 0.6 version of gltf utility
+	public enum ImportType {MESH, MATERIAL, NODE }
+//
+
 	public static class EnumExtensions {
 		public static int ByteSize(this GLType gltype) {
 			switch (gltype) {
